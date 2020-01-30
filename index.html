@@ -14,22 +14,24 @@
         <a-scene embedded arjs='sourceType: webcam; debugUIEnabled: false; detectionMode: mono_and_matrix; matrixCodeType: 3x3;'>
 
             <a-assets>
-                <a-asset-item id="object" src="obj/sap-logo.obj"></a-asset-item>
+                <a-asset-item id="object1" src="obj\1.obj"></a-asset-item>
+                <a-asset-item id="object2" src="obj\2.obj"></a-asset-item>
+                <a-asset-item id="object3" src="obj\3.obj"></a-asset-item>
             </a-assets>
 
             <!-- Marker using barcode 1 -->
             <a-marker type='barcode' value='1'>
-                <a-obj-model src="#object" color="blue" scale="0.01 0.01 0.01" rotation="-90 0 0" position="0 0 0"></a-obj-model>
+                <a-obj-model src="#object1" color="yellow" scale="0.01 0.01 0.01" rotation="-90 0 0" position="0 0 0"></a-obj-model>
             </a-marker>
 
             <!-- Marker using barcode 2 -->
             <a-marker type='barcode' value='2'>
-                <a-sphere position="0 0.5 0" color="blue"></a-sphere>
+                <a-obj-model src="#object2" color="yellow" scale="0.01 0.01 0.01" rotation="-90 0 0" position="0 0 0"></a-obj-model>
             </a-marker>
 
             <!-- Marker using barcode 3 -->
             <a-marker type='barcode' value='3'>
-                <a-cylinder position="0 0.5 0" color="red"></a-cylinder>
+                <a-obj-model src="#object3" color="yellow" scale="0.01 0.01 0.01" rotation="-90 0 0" position="0 0 0"></a-obj-model>
             </a-marker>
 
             <!-- Marker using barcode 4 -->
