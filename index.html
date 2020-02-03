@@ -31,6 +31,8 @@
                 <a-asset-item id="object15" src="obj\15.obj"></a-asset-item>
 
                 <a-asset-item id="desk" src="obj\desk.obj"></a-asset-item>
+                <a-asset-item id="ipad1" src="obj\ipad-out.obj"></a-asset-item>
+                <a-asset-item id="ipad2" src="obj\ipad-in.obj"></a-asset-item>
             </a-assets>
 
             <!-- Marker using barcode 1 -->
@@ -120,7 +122,9 @@
 
             <!-- Marker using barcode 18 -->
             <a-marker type='barcode' value='18'>
-                <a-obj-model src="#desk" color="black" scale="0.002 0.002 0.002" rotation="0 10 0" position="0 1 0"></a-obj-model>
+                <a-obj-model src="#desk" color="yellow" scale="0.002 0.002 0.002" rotation="0 0 0" position="0 1 0"></a-obj-model>
+                <a-obj-model src="#ipad1" color="white" scale="0.002 0.002 0.002" rotation="0 0 0" position="0 4 0"></a-obj-model>
+                <a-obj-model src="#ipad2" color="black" scale="0.002 0.002 0.002" rotation="0 0 0" position="0 4 0"></a-obj-model>
             </a-marker>
 
             <a-entity camera></a-entity>
