@@ -14,27 +14,31 @@
         <a-scene embedded arjs='sourceType: webcam; debugUIEnabled: false; detectionMode: mono_and_matrix; matrixCodeType: 3x3;'>
 
             <a-assets>
-                <a-asset-item id="object1" src="obj\1.obj"></a-asset-item>
-                <a-asset-item id="object2" src="obj\2.obj"></a-asset-item>
-                <a-asset-item id="object3" src="obj\3.obj"></a-asset-item>
-                <a-asset-item id="object4" src="obj\4.obj"></a-asset-item>
-                <a-asset-item id="object5" src="obj\5.obj"></a-asset-item>
-                <a-asset-item id="object6" src="obj\6.obj"></a-asset-item>
-                <a-asset-item id="object7" src="obj\7.obj"></a-asset-item>
-                <a-asset-item id="object8" src="obj\8.obj"></a-asset-item>
-                <a-asset-item id="object9" src="obj\9.obj"></a-asset-item>
-                <a-asset-item id="object10" src="obj\10.obj"></a-asset-item>
-                <a-asset-item id="object11" src="obj\11.obj"></a-asset-item>
-                <a-asset-item id="object12" src="obj\12.obj"></a-asset-item>
-                <a-asset-item id="object13" src="obj\13.obj"></a-asset-item>
-                <a-asset-item id="object14" src="obj\14.obj"></a-asset-item>
-                <a-asset-item id="object15" src="obj\15.obj"></a-asset-item>
+                <a-asset-item id="object1" src="obj\text\1.obj"></a-asset-item>
+                <a-asset-item id="object2" src="obj\text\2.obj"></a-asset-item>
+                <a-asset-item id="object3" src="obj\text\3.obj"></a-asset-item>
+                <a-asset-item id="object4" src="obj\text\4.obj"></a-asset-item>
+                <a-asset-item id="object5" src="obj\text\5.obj"></a-asset-item>
+                <a-asset-item id="object6" src="obj\text\6.obj"></a-asset-item>
+                <a-asset-item id="object7" src="obj\text\7.obj"></a-asset-item>
+                <a-asset-item id="object8" src="obj\text\8.obj"></a-asset-item>
+                <a-asset-item id="object9" src="obj\text\9.obj"></a-asset-item>
+                <a-asset-item id="object10" src="obj\text\10.obj"></a-asset-item>
+                <a-asset-item id="object11" src="obj\text\11.obj"></a-asset-item>
+                <a-asset-item id="object12" src="obj\text\12.obj"></a-asset-item>
+                <a-asset-item id="object13" src="obj\text\13.obj"></a-asset-item>
+                <a-asset-item id="object14" src="obj\text\14.obj"></a-asset-item>
+                <a-asset-item id="object15" src="obj\text\15.obj"></a-asset-item>
 
-                <a-asset-item id="desk" src="obj\desk.obj"></a-asset-item>
-                <a-asset-item id="ipad1" src="obj\ipad-out.obj"></a-asset-item>
-                <a-asset-item id="ipad2" src="obj\ipad-in.obj"></a-asset-item>
+                <a-asset-item id="desk" src="obj\desk\desk.obj"></a-asset-item>
+                <a-asset-item id="ipad1" src="obj\desk\ipad-out.obj"></a-asset-item>
+                <a-asset-item id="ipad2" src="obj\desk\ipad-in.obj"></a-asset-item>
 
-                <a-asset-item id="earth-obj" src="obj\low_poly_earth.gltf"></a-asset-item>
+                <!-- Scene 8 -->
+                <a-asset-item id="earth-obj" src="obj\scene8\low_poly_earth.gltf"></a-asset-item>
+                <a-asset-item id="scene8-txt1" src="obj\scene8\text1.gltf"></a-asset-item>
+                <a-asset-item id="scene8-txt2" src="obj\scene8\text2.gltf"></a-asset-item>
+
             </a-assets>
 
             <!-- Marker using barcode 1 -->
@@ -83,9 +87,11 @@
             <a-marker type='barcode' value='8'>
 
                 <!-- EARTH -->
-                <a-gltf-model src="#earth-obj" scale="0.4 0.4 0.4" rotation="-90 0 0" position="0 1 0"
-                animation="property: rotation; to: -90 0 360; loop: true; dur: 20000"></a-gltf-model>
-                <!--  -->
+                <a-gltf-model src="#earth-obj" scale="0.4 0.4 0.4" rotation="-90 0 0" position="0 1 0"></a-gltf-model>
+
+                <!-- TEXTS -->
+                <a-gltf-model src="#scene8-txt1" scale="0.4 0.4 0.4" rotation="0 0 0" position="1 1 0"></a-gltf-model>
+                <a-gltf-model src="#scene8-txt2" scale="0.4 0.4 0.4" rotation="0 0 0" position="-1 1 0"></a-gltf-model>
 
             </a-marker>
 
