@@ -49,6 +49,9 @@
                 <a-asset-item id="scene8-txt1" src="obj\scene8\text1.gltf"></a-asset-item>
                 <a-asset-item id="scene8-txt2" src="obj\scene8\text2.gltf"></a-asset-item>
 
+                <!-- Scene 12 -->
+                <a-asset-item id="wind-obj" src="obj\scene12\windturbine.gltf"></a-asset-item>
+
             </a-assets>
 
             <!-- Marker using barcode 1 -->
@@ -138,8 +141,10 @@
 
             <!-- Marker using barcode 12 -->
             <a-marker type='barcode' value='12'>
-                <a-obj-model src="#object12" color="#bb76b1" scale="0.002 0.002 0.002" rotation="0 0 0" position="0 1 0"
-                animation="property: rotation; to: 0 360 0; loop: true; dur: 10000"></a-obj-model>
+                
+                <!-- WINDTURBINES -->
+                <a-gltf-model src="#wind-obj" scale="0.06 0.06 0.06" rotation="-90 0 0" position="0 1 0"></a-gltf-model>
+
             </a-marker>
 
             <!-- Marker using barcode 13 -->
