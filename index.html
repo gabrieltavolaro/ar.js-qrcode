@@ -34,6 +34,9 @@
                 <a-asset-item id="ipad1" src="obj\desk\ipad-out.obj"></a-asset-item>
                 <a-asset-item id="ipad2" src="obj\desk\ipad-in.obj"></a-asset-item>
 
+                <!-- Scene 5 -->
+                <a-asset-item id="coffee-obj" src="obj\scene5\coffee.gltf"></a-asset-item>
+
                 <!-- Scene 8 -->
                 <a-asset-item id="earth-obj" src="obj\scene8\low_poly_earth.gltf"></a-asset-item>
                 <a-asset-item id="scene8-txt1" src="obj\scene8\text1.gltf"></a-asset-item>
@@ -67,8 +70,10 @@
 
             <!-- Marker using barcode 5 -->
             <a-marker type='barcode' value='5'>
-                <a-obj-model src="#object5" color="#4cb748" scale="0.002 0.002 0.002" rotation="0 0 0" position="0 1 0"
-                animation="property: rotation; to: 0 360 0; loop: true; dur: 10000"></a-obj-model>
+
+                <!-- COFFEE -->
+                <a-gltf-model src="#coffee-obj" scale="0.4 0.4 0.4" rotation="-90 0 0" position="0 1 0"></a-gltf-model>
+
             </a-marker>
 
             <!-- Marker using barcode 6 -->
