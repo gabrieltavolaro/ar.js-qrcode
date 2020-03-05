@@ -49,6 +49,9 @@
                 <a-asset-item id="scene8-txt1" src="obj\scene8\text1.gltf"></a-asset-item>
                 <a-asset-item id="scene8-txt2" src="obj\scene8\text2.gltf"></a-asset-item>
 
+                <!-- Scene 11 -->
+                <a-asset-item id="fruits-obj" src="obj\scene11\fruits.glb"></a-asset-item>
+
                 <!-- Scene 12 -->
                 <a-asset-item id="solar-obj" src="obj\scene12\solar-panels.gltf"></a-asset-item>
                 <a-asset-item id="scene12-txt1" src="obj\scene12\text1.gltf"></a-asset-item>
@@ -137,15 +140,17 @@
 
             <!-- Marker using barcode 11 -->
             <a-marker type='barcode' value='11'>
-                <a-obj-model src="#object11" color="#a9479a" scale="0.002 0.002 0.002" rotation="0 0 0" position="0 1 0"
-                animation="property: rotation; to: 0 360 0; loop: true; dur: 10000"></a-obj-model>
+
+                <!-- EARTH -->
+                <a-gltf-model src="fruits-obj" scale="0.5 0.5 0.5" rotation="-90 0 0" position="0 1 0"></a-gltf-model>
+
             </a-marker>
 
             <!-- Marker using barcode 12 -->
             <a-marker type='barcode' value='12'>
                 
                 <!-- SOLAR PANELS -->
-                <a-gltf-model src="#solar-obj" scale="0.01 0.01 0.01" rotation="-90 0 0" position="0 1 0"></a-gltf-model>
+                <a-gltf-model src="#solar-obj" scale="0.5 0.5 0.5" rotation="-90 0 0" position="0 1 0"></a-gltf-model>
 
                 <!-- TEXTS -->
                 <a-gltf-model src="#scene12-txt1" scale="0.18 0.18 0.18" rotation="0 0 0" position="0 1 -0.5"></a-gltf-model>
