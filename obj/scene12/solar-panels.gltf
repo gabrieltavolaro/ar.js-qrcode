@@ -143,17 +143,44 @@
         {
             "doubleSided" : true,
             "name" : "Material",
-            "pbrMetallicRoughness" : {}
+            "pbrMetallicRoughness" : {
+                "baseColorFactor" : [
+                    0.088051438331604,
+                    0.088051438331604,
+                    0.088051438331604,
+                    1
+                ],
+                "metallicFactor" : 0.21818183362483978,
+                "roughnessFactor" : 0.3199999928474426
+            }
         },
         {
             "doubleSided" : true,
             "name" : "cell base",
-            "pbrMetallicRoughness" : {}
+            "pbrMetallicRoughness" : {
+                "baseColorFactor" : [
+                    0.7256361842155457,
+                    0.8000000715255737,
+                    0.8000000715255737,
+                    1
+                ],
+                "metallicFactor" : 0.7527272701263428,
+                "roughnessFactor" : 0.11986415088176727
+            }
         },
         {
             "doubleSided" : true,
             "name" : "Material.007",
-            "pbrMetallicRoughness" : {}
+            "pbrMetallicRoughness" : {
+                "baseColorFactor" : [
+                    0.005062471143901348,
+                    0,
+                    0.7276073098182678,
+                    1
+                ],
+                "metallicFactor" : 0.6509090662002563,
+                "roughnessFactor" : 0.0980459600687027
+            }
         }
     ],
     "meshes" : [
