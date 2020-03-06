@@ -1,14 +1,18 @@
 <!doctype HTML>
 <html>
     <head>
+
         <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+
     </head>
+
     <script src="https://aframe.io/releases/0.9.1/aframe.min.js"></script>
     <script src="https://rawgit.com/jeromeetienne/AR.js/master/aframe/build/aframe-ar.min.js"></script>
     
     <body style='margin : 0px; overflow: hidden;'>
+
         <!-- we add detectionMode and matrixCodeType to tell AR.js to recognize barcode markers -->
-        <a-scene embedded arjs='sourceType: webcam; debugUIEnabled: false; detectionMode: mono_and_matrix; matrixCodeType: 3x3;'>
+        <a-scene embedded arjs='sourceType: webcam; debugUIEnabled: true; detectionMode: mono_and_matrix; matrixCodeType: 3x3;'>
 
             <a-assets>
 
@@ -41,7 +45,7 @@
             <a-marker type='barcode' value='4'>
 
                 <!-- MONEY SACK -->
-                <a-gltf-model src="#money-obj" scale="0.8 0.8 0.8" rotation="-90 0 0" position="0 1 0.5"></a-gltf-model>
+                <a-gltf-model src="#money-obj" scale="0.1 0.1 0.1" rotation="0 0 0" position="0 1 0"></a-gltf-model>
 
                 <!-- TEXTS -->
                 <a-gltf-model src="#scene4-txt1" scale="0.18 0.18 0.18" rotation="0 0 0" position="0 1 -0.5"></a-gltf-model>
@@ -95,8 +99,11 @@
             </a-marker>
 
             <a-entity camera></a-entity>
+
         </a-scene>
+
     </body>
+
 </html>
 
 <!-- https://au.gmented.com/app/marker/marker.php -->
