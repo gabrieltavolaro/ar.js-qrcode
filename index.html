@@ -14,25 +14,6 @@
         <a-scene embedded arjs='sourceType: webcam; debugUIEnabled: false; detectionMode: mono_and_matrix; matrixCodeType: 3x3;'>
 
             <a-assets>
-                <a-asset-item id="object1" src="obj\text\1.obj"></a-asset-item>
-                <a-asset-item id="object2" src="obj\text\2.obj"></a-asset-item>
-                <a-asset-item id="object3" src="obj\text\3.obj"></a-asset-item>
-                <a-asset-item id="object4" src="obj\text\4.obj"></a-asset-item>
-                <a-asset-item id="object5" src="obj\text\5.obj"></a-asset-item>
-                <a-asset-item id="object6" src="obj\text\6.obj"></a-asset-item>
-                <a-asset-item id="object7" src="obj\text\7.obj"></a-asset-item>
-                <a-asset-item id="object8" src="obj\text\8.obj"></a-asset-item>
-                <a-asset-item id="object9" src="obj\text\9.obj"></a-asset-item>
-                <a-asset-item id="object10" src="obj\text\10.obj"></a-asset-item>
-                <a-asset-item id="object11" src="obj\text\11.obj"></a-asset-item>
-                <a-asset-item id="object12" src="obj\text\12.obj"></a-asset-item>
-                <a-asset-item id="object13" src="obj\text\13.obj"></a-asset-item>
-                <a-asset-item id="object14" src="obj\text\14.obj"></a-asset-item>
-                <a-asset-item id="object15" src="obj\text\15.obj"></a-asset-item>
-
-                <a-asset-item id="desk" src="obj\desk\desk.obj"></a-asset-item>
-                <a-asset-item id="ipad1" src="obj\desk\ipad-out.obj"></a-asset-item>
-                <a-asset-item id="ipad2" src="obj\desk\ipad-in.obj"></a-asset-item>
 
                 <!-- Scene 4 -->
                 <a-asset-item id="money-obj" src="obj\scene4\money-sack.gltf"></a-asset-item>
@@ -59,24 +40,6 @@
 
             </a-assets>
 
-            <!-- Marker using barcode 1 -->
-            <a-marker type='barcode' value='1'>
-                    <a-obj-model src="#object1" color="#74aac3" scale="0.002 0.002 0.002" rotation="0 0 0" position="0 1 0"
-                    animation="property: rotation; to: 0 360 0; loop: true; dur: 10000"></a-obj-model>
-            </a-marker>
-
-            <!-- Marker using barcode 2 -->
-            <a-marker type='barcode' value='2'>
-                <a-obj-model src="#object2" color="#2a3694" scale="0.002 0.002 0.002" rotation="0 0 0" position="0 1 0"
-                animation="property: rotation; to: 0 360 0; loop: true; dur: 10000"></a-obj-model>
-            </a-marker>
-
-            <!-- Marker using barcode 3 -->
-            <a-marker type='barcode' value='3'>
-                <a-obj-model src="#object3" color="#168fce" scale="0.002 0.002 0.002" rotation="0 0 0" position="0 1 0"
-                animation="property: rotation; to: 0 360 0; loop: true; dur: 10000"></a-obj-model>
-            </a-marker>
-
             <!-- Marker using barcode 4 -->
             <a-marker type='barcode' value='4'>
 
@@ -101,18 +64,6 @@
 
             </a-marker>
 
-            <!-- Marker using barcode 6 -->
-            <a-marker type='barcode' value='6'>
-                <a-obj-model src="#object6" color="#7ac474" scale="0.002 0.002 0.002" rotation="0 0 0" position="0 1 0"
-                animation="property: rotation; to: 0 360 0; loop: true; dur: 10000"></a-obj-model>
-            </a-marker>
-
-            <!-- Marker using barcode 7 -->
-            <a-marker type='barcode' value='7'>
-                <a-obj-model src="#object7" color="#942c2b" scale="0.002 0.002 0.002" rotation="0 0 0" position="0 1 0"
-                animation="property: rotation; to: 0 360 0; loop: true; dur: 10000"></a-obj-model>
-            </a-marker>
-
             <!-- Marker using barcode 8 -->
             <a-marker type='barcode' value='8'>
 
@@ -124,18 +75,6 @@
                 <a-gltf-model src="#scene8-txt1" scale="0.18 0.18 0.18" rotation="0 0 0" position="0 1 -0.6"></a-gltf-model>
                 <a-gltf-model src="#scene8-txt2" scale="0.18 0.18 0.18" rotation="0 0 0" position="0 1 0.5"></a-gltf-model>
 
-            </a-marker>
-
-            <!-- Marker using barcode 9 -->
-            <a-marker type='barcode' value='9'>
-                <a-obj-model src="#object9" color="#c47374" scale="0.002 0.002 0.002" rotation="0 0 0" position="0 1 0"
-                animation="property: rotation; to: 0 360 0; loop: true; dur: 10000"></a-obj-model>
-            </a-marker>
-
-            <!-- Marker using barcode 10 -->
-            <a-marker type='barcode' value='10'>
-                <a-obj-model src="#object10" color="#932e92" scale="0.002 0.002 0.002" rotation="0 0 0" position="0 1 0"
-                animation="property: rotation; to: 0 360 0; loop: true; dur: 10000"></a-obj-model>
             </a-marker>
 
             <!-- Marker using barcode 11 -->
@@ -156,38 +95,6 @@
                 <a-gltf-model src="#scene12-txt1" scale="0.18 0.18 0.18" rotation="0 0 0" position="0 1 -0.5"></a-gltf-model>
                 <a-gltf-model src="#scene12-txt2" scale="0.18 0.18 0.18" rotation="0 0 0" position="0 1 0.4"></a-gltf-model>
 
-            </a-marker>
-
-            <!-- Marker using barcode 13 -->
-            <a-marker type='barcode' value='13'>
-                <a-obj-model src="#object13" color="#929336" scale="0.002 0.002 0.002" rotation="0 0 0" position="0 1 0"
-                animation="property: rotation; to: 0 360 0; loop: true; dur: 10000"></a-obj-model>
-            </a-marker>
-
-            <!-- Marker using barcode 14 -->
-            <a-marker type='barcode' value='14'>
-                <a-obj-model src="#object14" color="#cbcb2c" scale="0.002 0.002 0.002" rotation="0 0 0" position="0 1 0"
-                animation="property: rotation; to: 0 360 0; loop: true; dur: 10000"></a-obj-model>
-            </a-marker>
-
-            <!-- Marker using barcode 15 -->
-            <a-marker type='barcode' value='15'>
-                <a-obj-model src="#object15" color="#c4c474" scale="0.002 0.002 0.002" rotation="0 0 0" position="0 1 0"
-                animation="property: rotation; to: 0 360 0; loop: true; dur: 10000"></a-obj-model>
-            </a-marker>
-
-            <!-- Marker using barcode 16 -->
-            <a-marker type='barcode' value='16'>
-                <a-obj-model src="#desk" color="#999999" scale="0.006 0.006 0.006" rotation="-90 0 0" position="0 0 0"></a-obj-model>
-                
-                <a-obj-model src="#ipad1" color="white" scale="0.0012 0.0012 0.0012" rotation="-90 90 0" position="0 0.91 0.4"></a-obj-model>
-                <a-obj-model src="#ipad2" color="black" scale="0.0012 0.0012 0.0012" rotation="-90 90 0" position="0 0.91 0.4"></a-obj-model>
-
-                <a-obj-model src="#ipad1" color="white" scale="0.0012 0.0012 0.0012" rotation="-90 90 0" position="0 0.91 0"></a-obj-model>
-                <a-obj-model src="#ipad2" color="black" scale="0.0012 0.0012 0.0012" rotation="-90 90 0" position="0 0.91 0"></a-obj-model>
-
-                <a-obj-model src="#ipad1" color="white" scale="0.0012 0.0012 0.0012" rotation="-90 90 0" position="0 0.91 -0.4"></a-obj-model>
-                <a-obj-model src="#ipad2" color="black" scale="0.0012 0.0012 0.0012" rotation="-90 90 0" position="0 0.91 -0.4"></a-obj-model>
             </a-marker>
 
             <a-entity camera></a-entity>
